@@ -3,7 +3,7 @@ const { Pizza } = require('../models');
 const pizzaController = {
   // the functions will go here as methods
   // get all pizzas
-  getAllPizzas(req, res) {
+  getAllPizza(req, res) {
     Pizza.find({})
     .then(dbPizzaData => res.json(dbPizzaData))
     .catch(err => {
